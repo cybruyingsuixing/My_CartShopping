@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:gravity="center_vertical"
+
+    >
+
+    <CheckBox
+        android:id="@+id/child_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/product_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:src="@mipmap/ic_launcher" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/product_title_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品标题" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/child_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥0.0" />
+
+        </LinearLayout>
+
+        <com.bway.my_demo_shopping.mvp.cart.view.activity.MyAddSub
+            android:id="@+id/my_sub_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            >
+        </com.bway.my_demo_shopping.mvp.cart.view.activity.MyAddSub>
+    </LinearLayout>
+</LinearLayout>
